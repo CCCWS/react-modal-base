@@ -17,6 +17,7 @@ function Modal({ setModalOpen, modalOpen }) {
 
   const modalCloseBtn = () => {
     setModalOpen(false);
+    document.querySelector("body").classList.toggle("not-scroll");
   };
 
   return (
